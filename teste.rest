@@ -1,4 +1,4 @@
-GET http://localhost:3000/1
+GET http://localhost:3000/
 Content-Type: application/json
 
 {
@@ -11,21 +11,25 @@ POST http://localhost:3000
 Content-Type: application/json
 
 {
-    "nome":"alan",
-    "idade":42
+    "nome": "fulano da silva nova",
+    "telefone": "(00)00000-0000",
+    "email": "fulano@gmail.com",
+    "cep": "0000-000"
 }
 
 ###
-PUT http://localhost:3000/1
+PUT http://localhost:3000/7
 Content-Type: application/json
 
 {
-    "nome":"alan",
-    "idade":42
+    "nome": "fulano da silva nova",
+    "telefone": "(00)00000-0000",
+    "email": "fulano@gmail.com",
+    "cep": "0000-000"
 }
 
 ###
-DELETE  http://localhost:3000/1
+DELETE  http://localhost:3000/7
 Content-Type: application/json
 
 {
