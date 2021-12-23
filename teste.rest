@@ -1,5 +1,15 @@
-GET http://localhost:3000/
+POST http://localhost:3000/admin/
 Content-Type: application/json
+
+{
+    "email":"fulano@gmail.com",
+    "password":"123"
+
+}
+###
+GET http://localhost:3000/api/26
+Content-Type: application/json
+Authorization: Bearer 123456789
 
 {
 
@@ -7,8 +17,9 @@ Content-Type: application/json
 
 
 ###
-POST http://localhost:3000
+POST http://localhost:3000/api/
 Content-Type: application/json
+Authorization: Bearer 123456789
 
 {
     "nome": "fulano da silva nova",
@@ -18,8 +29,9 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:3000/7
+PUT http://localhost:3000/api/7
 Content-Type: application/json
+Authorization: Bearer 123456789
 
 {
     "nome": "fulano da silva nova",
@@ -29,8 +41,9 @@ Content-Type: application/json
 }
 
 ###
-DELETE  http://localhost:3000/7
+DELETE  http://localhost:3000/api/7
 Content-Type: application/json
+Authorization: Bearer 123456789
 
 {
   

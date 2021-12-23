@@ -10,7 +10,7 @@ class Conexao extends Credencias
   public function conectar()
   {
     try {
-      $conn = new PDO("mysql:host=localhost;dbname=onload", $this->getUsername(), $this->getPassword());
+      $conn = new PDO("mysql:host=localhost;dbname=banco", $this->getUsername(), $this->getPassword());
       $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       return $conn;
       echo "Connected successfully";
